@@ -1,0 +1,22 @@
+name: 'Start MatrixOne'
+description: 'Start a MatrixOne database'
+author: 'FelixSeptem'
+branding:
+  icon: 'database'
+  color: 'green'
+input:
+  host port:
+    description: 'The port of host'
+    required: false
+    default: 6001
+  container port:
+    description: 'The port of container'
+    required: 6001
+    default: 6001
+  tag:
+    description: 'Docker hub tag of MatrixOne image'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
