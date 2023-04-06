@@ -4,7 +4,7 @@ GitHub Action to setup a matrixorigin/matrixone database
 ### Usage
 ```yaml
 steps:
-- uses: FelixSeptem/matrixone-action@v0.1
+- uses: FelixSeptem/matrixone-action@v0.1.1
     with:
         host port: 6001 # Optional, default value is 6001. The port of host
         container port: 6001 # Optional, default value is 3306. The port of container
