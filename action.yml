@@ -17,6 +17,10 @@ input:
     description: 'Docker hub tag of MatrixOne image'
     required: false
     default: 'latest'
+  pending duration:
+    description: 'Time duration after `docker run` command, wait for MO start'
+    required: false
+    default: '30s'
 runs:
   using: 'docker'
   image: 'Dockerfile'
