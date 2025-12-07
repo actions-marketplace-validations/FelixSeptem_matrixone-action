@@ -11,12 +11,16 @@ input:
     default: 6001
   container port:
     description: 'The port of container'
-    required: 6001
+    required: false
     default: 6001
   tag:
     description: 'Docker hub tag of MatrixOne image'
     required: false
     default: 'latest'
+  pending duration:
+    description: 'Time duration after `docker run` command, wait for MO start'
+    required: false
+    default: '30s'
 runs:
   using: 'docker'
   image: 'Dockerfile'
